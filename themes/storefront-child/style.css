@@ -8,3 +8,47 @@ License: Ingen Licens
 Template: storefront
 */
 
+
+.hero {
+	position: relative;
+}
+
+	.hero .text {
+        background-color: white;
+        border-radius: 25px;
+		font-size: 22px;
+        padding-top: 25px;
+		left: 0;
+		margin: 0 auto;
+		position: absolute;
+		right: 0;
+		text-align: center;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 66.66666667%;
+	}
+
+		.hero .text h1 {
+			font-size: 50px;
+		}
+    
+
+
+@media ( max-width: 768px ) {
+
+.hero .text {
+	color: inherit;
+	font-size: 16px;
+	margin-top: 30px;
+	position: static;
+	text-shadow: none;
+	top: auto;
+	transform: none;
+	width: 100%;
+}
+
+	.hero .text h1 {
+		font-size: 30px;
+	}
+
+}
