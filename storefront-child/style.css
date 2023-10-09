@@ -8,3 +8,131 @@ License: Ingen Licens
 Template: storefront
 */
 
+a {
+	color: #F24822;
+}
+
+.hero {
+	position: relative;
+}
+
+	.hero .text {
+        background-color: white;
+        border-radius: 25px;
+		font-size: 22px;
+        padding-top: 25px;
+		left: 0;
+		margin: 0 auto;
+		position: absolute;
+		right: 0;
+		text-align: center;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 66.66666667%;
+	}
+
+		.hero .text h1 {
+			font-size: 50px;
+		}
+    
+
+
+@media ( max-width: 768px ) {
+
+.hero .text {
+	color: inherit;
+	font-size: 16px;
+	margin-top: 30px;
+	position: static;
+	text-shadow: none;
+	top: auto;
+	transform: none;
+	width: 100%;
+}
+
+	.hero .text h1 {
+		font-size: 30px;
+	}
+
+}
+
+article {
+	background-color: white;
+	border: solid 1px #ccc;
+	border-top: solid 2px #333;
+	padding: 30px;
+	position: relative;
+	margin-bottom: 30px;
+}
+
+	article + article {
+		margin-top: 30px;
+	}
+
+	article img {
+		box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+		margin-bottom: 30px;
+	}
+
+	article .title {
+		margin-bottom: 10px;
+	}
+
+	article .meta {
+		margin: 0 0 10px;
+		overflow: hidden;
+		padding: 0;
+	}
+
+		article .meta > li {
+			float: left;
+			list-style: none;
+			margin-right: 15px;
+		}
+
+			article .meta > li > .fa {
+				margin-right: 5px;
+			}
+
+	article .categories {
+		margin: 0;
+		overflow: hidden;
+		padding: 0;
+	}
+
+		article .categories > li {
+			float: left;
+			list-style: none;
+			margin-right: 15px;
+		}
+
+			article .categories > li > a {
+				background-color: #F24822;
+				border-radius: 3px;
+				color: white;
+				display: block;
+				font-size: 12px;
+				padding: 5px 10px;
+			}
+
+@media ( max-width: 768px ) {
+
+article .meta {
+	margin: 25px 0;
+}
+
+	article .meta > li {
+		float: none;
+		margin-right: 0;
+	}
+
+		article .meta > li > .fa {
+			min-width: 20px;
+			text-align: center;
+		}
+
+}
+
+footer {
+	margin-top: 50px;
+}

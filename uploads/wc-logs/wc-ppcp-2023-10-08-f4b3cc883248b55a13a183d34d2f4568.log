@@ -1,0 +1,5 @@
+2023-10-08T20:01:21+00:00 INFO Redirecting to checkout page. Required fields missing: Array
+(
+    [0] => billing_phone_required
+)
+
