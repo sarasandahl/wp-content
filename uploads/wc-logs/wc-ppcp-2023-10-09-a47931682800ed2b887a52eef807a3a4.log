@@ -1,1 +1,21 @@
 2023-10-09T10:24:29+00:00 INFO Webhook could not be configured during connect process. PayPal does not allow webhooks where the domain is localhost.
+2023-10-09T10:55:53+00:00 INFO Redirecting to checkout page. Required fields missing: Array
+(
+    [0] => billing_phone_required
+)
+
+2023-10-09T10:57:24+00:00 INFO Redirecting to checkout page. Required fields missing: Array
+(
+    [0] => billing_phone_required
+)
+
+2023-10-09T11:03:19+00:00 INFO Redirecting to checkout page. Required fields missing: Array
+(
+    [0] => billing_phone_required
+)
+
+2023-10-09T11:14:29+00:00 INFO Redirecting to checkout page. Required fields missing: Array
+(
+    [0] => billing_phone_required
+)
+
