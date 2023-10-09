@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 /**
  * Deli engine room
@@ -30,3 +31,17 @@ require_once( 'inc/plugged.php' );
  * of this theme is performed. Instead, add your customisations to a plugin such as
  * https://github.com/woothemes/theme-customisations
  */
+=======
+<?php 
+
+//menyer
+function mytheme_menus(){
+    $locations = array(
+        'footer' => "Footer Menu"
+    );
+
+    register_nav_menus($locations);
+}
+
+add_action('init','mytheme_menus');
+>>>>>>> sara
