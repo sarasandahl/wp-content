@@ -21,6 +21,10 @@
                         </div>
 
                     </div>
+
+                    <ul role="navigation">
+							<?php dynamic_sidebar('page-1'); ?>
+						</ul>
                 </div>
             </div>
         </div>

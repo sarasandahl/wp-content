@@ -9,7 +9,7 @@ Template: storefront
 */
 
 a {
-	color: red;
+	color: #F24822;
 }
 
 .hero {
@@ -107,7 +107,7 @@ article {
 		}
 
 			article .categories > li > a {
-				background-color: crimson;
+				background-color: #F24822;
 				border-radius: 3px;
 				color: white;
 				display: block;
