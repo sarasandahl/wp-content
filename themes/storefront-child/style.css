@@ -136,3 +136,7 @@ article .meta {
 footer {
 	margin-top: 50px;
 }
+
+#container-about-us {
+	display: flex;
+}
