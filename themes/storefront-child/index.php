@@ -22,8 +22,7 @@ get_header(); ?>
                             while( have_posts()) {
                                 the_post(); ?>
             
-                                <article>
-                                    
+                                <article id="page-article">
                                     <h2 class="title">
                                         <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                                     </h2>
