@@ -56,7 +56,7 @@ a {
 
 }
 
-article {
+#page-article {
 	background-color: white;
 	border: solid 1px #ccc;
 	border-top: solid 2px #333;
@@ -65,48 +65,48 @@ article {
 	margin-bottom: 30px;
 }
 
-	article + article {
+#page-article + article {
 		margin-top: 30px;
 	}
 
-	article img {
+	#page-article img {
 		box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
 		margin-bottom: 30px;
 	}
 
-	article .title {
+	#page-article .title {
 		margin-bottom: 10px;
 	}
 
-	article .meta {
+	#page-article .meta {
 		margin: 0 0 10px;
 		overflow: hidden;
 		padding: 0;
 	}
 
-		article .meta > li {
+	#page-article .meta > li {
 			float: left;
 			list-style: none;
 			margin-right: 15px;
 		}
 
-			article .meta > li > .fa {
+		#page-article .meta > li > .fa {
 				margin-right: 5px;
 			}
 
-	article .categories {
+			#page-article .categories {
 		margin: 0;
 		overflow: hidden;
 		padding: 0;
 	}
 
-		article .categories > li {
+	#page-article .categories > li {
 			float: left;
 			list-style: none;
 			margin-right: 15px;
 		}
 
-			article .categories > li > a {
+		#page-article .categories > li > a {
 				background-color: #F24822;
 				border-radius: 3px;
 				color: white;
@@ -117,16 +117,16 @@ article {
 
 @media ( max-width: 768px ) {
 
-article .meta {
+	#page-article .meta {
 	margin: 25px 0;
 }
 
-	article .meta > li {
+#page-article .meta > li {
 		float: none;
 		margin-right: 0;
 	}
 
-		article .meta > li > .fa {
+	#page-article .meta > li > .fa {
 			min-width: 20px;
 			text-align: center;
 		}

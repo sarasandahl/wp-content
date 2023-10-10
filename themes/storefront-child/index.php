@@ -22,11 +22,11 @@ get_header(); ?>
                             while( have_posts()) {
                                 the_post(); ?>
             
-                                <article>
-                                    <?php the_post_thumbnail(); ?>
+                                <article id="page-article">
                                     <h2 class="title">
                                         <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                                     </h2>
+                                    <?php the_post_thumbnail(); ?>
                                     <ul class="meta">
                                         <li>
                                             <i class="fa fa-calendar"></i> <?php the_date('j F, Y'); ?>
