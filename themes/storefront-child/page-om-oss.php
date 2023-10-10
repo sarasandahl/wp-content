@@ -13,7 +13,7 @@ $contact_title = get_field('contact_title');
         <div class="left-text">
 
             <?php if($about_title): ?>
-                <h1><?php echo $about_title; ?></h1>
+                <h2><?php echo $about_title; ?></h2>
             <?php endif; ?>
 
             <?php if($about_text): ?>
@@ -21,7 +21,7 @@ $contact_title = get_field('contact_title');
             <?php endif; ?>
 
             <?php if($contact_title): ?>
-                <h1><?php echo $contact_title; ?></h1>
+                <h3><?php echo $contact_title; ?></h3>
             <?php endif; ?>
 
             <?php if($about_number): ?>

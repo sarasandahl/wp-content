@@ -12,6 +12,10 @@ a {
 	color: #F24822;
 }
 
+h1 {
+	text-align: center;
+}
+
 .hero {
 	position: relative;
 }
