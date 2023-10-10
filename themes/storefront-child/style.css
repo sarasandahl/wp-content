@@ -139,4 +139,14 @@ footer {
 
 #container-about-us {
 	display: flex;
+	gap: 30px;
+}
+
+#footer-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+#stores-location-box {
+	padding-top: 40px;
 }
