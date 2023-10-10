@@ -27,6 +27,24 @@ $about_image = get_field('about_image')
                 <a href="mailto:<?php echo $about_email; ?>"><?php echo $about_email; ?></a>
             <?php endif; ?>
 
+            <!--- Outputtar CPT-lösning för Butiker --->
+            <?php
+            $loop = new WP_Query(
+            array(
+                'post_type' => 'butiker',
+                'posts_per_page' => 50
+            )
+            );
+            while ( $loop->have_posts() ) : $loop->the_post();
+
+            ?>
+
+            <h2><?php the_title(); ?></h2>
+
+            <?php endwhile;
+                wp_reset_postdata();
+            ?>
+
         </div>
         
         <div class="right-image">
@@ -37,23 +55,5 @@ $about_image = get_field('about_image')
 
         </div>
 </div>
-
-<!--- Outputtar CPT-lösning för Butiker --->
-    <?php
-    $loop = new WP_Query(
-    array(
-        'post_type' => 'butiker',
-        'posts_per_page' => 50
-    )
-    );
-    while ( $loop->have_posts() ) : $loop->the_post();
-
-    ?>
-
-    <h2><?php the_title(); ?></h2>
-
-    <?php endwhile;
-        wp_reset_postdata();
-    ?>
 
 <?php get_footer(); ?>
