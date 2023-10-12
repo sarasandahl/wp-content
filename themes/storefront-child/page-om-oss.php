@@ -10,7 +10,7 @@ $contact_title = get_field('contact_title');
 
 <!--- ACF-lösning för Om Oss-sida --->
 <div id="container-about-us">
-        <div class="left-text">
+        <div id="info-container" class="left-text">
 
             <?php if($about_title): ?>
                 <h2><?php echo $about_title; ?></h2>
@@ -25,7 +25,7 @@ $contact_title = get_field('contact_title');
             <?php endif; ?>
 
             <?php if($about_number): ?>
-                <p><?php echo (int)$about_number; ?></p>
+                <i class="fa fa-facebook"></i><p><?php echo (int)$about_number; ?></p>
             <?php endif; ?>
 
             <?php if($about_email): ?>

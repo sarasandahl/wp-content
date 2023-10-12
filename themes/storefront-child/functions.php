@@ -1,6 +1,6 @@
 <?php 
 
-//menyer
+//Menyer
 function mytheme_menus(){
     $locations = array(
         'footer' => "Footer Menu"
@@ -11,25 +11,27 @@ function mytheme_menus(){
 
 add_action('init','mytheme_menus');
 
-//custom Post Type-lösning för fysiska butiker
+//Custom Post Type-lösning för fysiska butiker
 function create_posttype() {
     register_post_type( 'butiker',
     // CPT-val
-    array(
-      'labels' => array(
-       'name' => __( 'butiker' ),
-       'singular_name' => __( 'Butik' )
-      ),
-      'public' => true,
-      'has_archive' => false,
-      'rewrite' => array('slug' => 'butiker'),
-     )
+        array(
+            'labels' => array(
+                'name' => __( 'Butiker', 'plural' ),
+                'singular_name' => __( 'Butik', 'singular' )
+            ),
+                'public' => true,
+                'query_var' => true, // Skapa en query-variabel för post-typen
+                'has_archive' => false,
+                'rewrite' => array('slug' => 'butiker'),
+                'hierarchical' => false, // Ska de behandlas som sidor (true) eller inlägg (false)?
+        )
     );
-    }
-    //Hooking up our function to theme setup
+}
+//Hooking up our function to theme setup
 add_action( 'init', 'create_posttype' );    
 
-//uppsättning av widgets
+//Uppsättning av widgets
 function mytheme_widget_areas(){
     register_sidebar(
         array(

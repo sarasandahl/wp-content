@@ -23,7 +23,7 @@
                     <?php
                     $loop = new WP_Query(
                     array(
-                        'post_type' => 'butiker',
+                        'post_type' => 'Butiker',
                         'posts_per_page' => 50
                     )
                     );
