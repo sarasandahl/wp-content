@@ -17,13 +17,13 @@ function create_posttype() {
     // CPT-val
         array(
             'labels' => array(
-                'name' => __( 'Butiker', 'plural' ),
-                'singular_name' => __( 'Butik', 'singular' )
+                'name' => __( 'Butiker', 'plural' ), // Namnger i singular
+                'singular_name' => __( 'Butik', 'singular' ) // Namnger i plural
             ),
-                'public' => true,
+                'public' => true, // Alla ska få göra ändringar i admin-panelen
                 'query_var' => true, // Skapa en query-variabel för post-typen
-                'has_archive' => false,
-                'rewrite' => array('slug' => 'butiker'),
+                'has_archive' => false, // Om posten har arkiv eller inte
+                'rewrite' => array('slug' => 'butiker'), // Skriver om vad sluggen blir
                 'hierarchical' => false, // Ska de behandlas som sidor (true) eller inlägg (false)?
         )
     );
