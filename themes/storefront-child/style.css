@@ -16,6 +16,10 @@ h1 {
 	text-align: center;
 }
 
+.widget_product_search > form > input{
+	background-color: #a3c1ad;
+}
+
 .hero {
 	position: relative;
 }
