@@ -25,6 +25,7 @@ function create_posttype() {
                 'has_archive' => false, // Om posten har arkiv eller inte
                 'rewrite' => array('slug' => 'butiker'), // Skriver om vad sluggen blir
                 'hierarchical' => false, // Ska de behandlas som sidor (true) eller inlägg (false)?
+                'menu_icon'   => 'dashicons-products',
         )
     );
 }

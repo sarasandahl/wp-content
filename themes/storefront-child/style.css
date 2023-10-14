@@ -145,6 +145,10 @@ footer {
 	margin-top: 50px;
 }
 
+#colophon {
+	background-color: #a3c1ad;
+}
+
 #container-about-us {
 	display: flex;
 	gap: 30px;
