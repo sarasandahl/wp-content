@@ -162,25 +162,3 @@ footer {
 #stores-location-box {
 	padding-top: 40px;
 }
-
-@media screen and (max-width: 800px) {
-	#container-about-us {
-		display: flex;
-		flex-direction: column;
-		gap: 30px;
-	}
-
-	.right-image {
-		display:none;
-	}
-
-	#stores-location-box {
-		padding-top: 40px;
-	}
-
-	#footer-container {
-		display: flex;
-		flex-direction: column;
-
-	}
-}

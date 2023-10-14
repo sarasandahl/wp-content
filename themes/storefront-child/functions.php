@@ -12,25 +12,26 @@ function mytheme_menus(){
 add_action('init','mytheme_menus');
 
 //Custom Post Type-lösning för fysiska butiker
-function create_posttype() {
-    register_post_type( 'butiker',
+function create_posttype() { 
+    register_post_type( 'butiker', 
     // CPT-val
-        array(
-            'labels' => array(
-                'name' => __( 'Butiker', 'plural' ), // Namnger i singular
-                'singular_name' => __( 'Butik', 'singular' ) // Namnger i plural
+        array( 
+            'labels' => array( 
+                'name' => __( 'Butiker', 'plural' ), 
+                'singular_name' => __( 'Butik', 'singular' ),
             ),
-                'public' => true, // Alla ska få göra ändringar i admin-panelen
-                'query_var' => true, // Skapa en query-variabel för post-typen
-                'has_archive' => false, // Om posten har arkiv eller inte
-                'rewrite' => array('slug' => 'butiker'), // Skriver om vad sluggen blir
-                'hierarchical' => false, // Ska de behandlas som sidor (true) eller inlägg (false)?
-                'menu_icon'   => 'dashicons-products',
+                'hierarchical' => true,
+                'public' => true,
+                'query_var' => true,
+                'has_archive' => false,
+                'supports' => array('title', 'editor'),
+                'rewrite' => array('slug' => 'butiker'),
+                'menu_icon'   => 'dashicons-store',
         )
     );
 }
 
-add_action( 'init', 'create_posttype' );    
+add_action( 'init', 'create_posttype' );
 
 //Uppsättning av widgets
 function mytheme_widget_areas(){
