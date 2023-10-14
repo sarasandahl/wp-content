@@ -29,7 +29,7 @@ function create_posttype() {
         )
     );
 }
-//Hooking up our function to theme setup
+
 add_action( 'init', 'create_posttype' );    
 
 //Uppsättning av widgets
@@ -48,3 +48,10 @@ function mytheme_widget_areas(){
 }
 
 add_action('widgets_init', 'mytheme_widget_areas');
+
+//Dashicons
+function load_dashicons_front_end() {
+    wp_enqueue_style( 'dashicons' );
+}
+
+add_action( 'wp_enqueue_scripts', 'load_dashicons_front_end' );

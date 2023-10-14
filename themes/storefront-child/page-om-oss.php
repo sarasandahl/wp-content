@@ -20,16 +20,12 @@ $contact_title = get_field('contact_title');
                 <p><?php echo nl2br($about_text); ?></p>
             <?php endif; ?>
 
-            <?php if($contact_title): ?>
-                <h3><?php echo $contact_title; ?></h3>
-            <?php endif; ?>
-
             <?php if($about_number): ?>
-                <i class="fa fa-facebook"></i><p><?php echo (int)$about_number; ?></p>
+                <span class="dashicons dashicons-phone"></span><p><?php echo (int)$about_number; ?></p>
             <?php endif; ?>
 
             <?php if($about_email): ?>
-                <a href="mailto:<?php echo $about_email; ?>"><?php echo $about_email; ?></a>
+                <span class="dashicons dashicons-email"></span><br><a href="mailto:<?php echo $about_email; ?>"><?php echo $about_email; ?></a>
             <?php endif; ?>
                 
         </div>
