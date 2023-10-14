@@ -160,6 +160,9 @@ footer {
 		display: flex;
 		align-items: center;
 	}
+	.right-image {
+		display: none;
+	}
 	}
 
 #stores-location-box {
