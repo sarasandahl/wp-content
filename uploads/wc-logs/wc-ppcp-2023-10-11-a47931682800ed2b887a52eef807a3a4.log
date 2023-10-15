@@ -1,0 +1,118 @@
+2023-10-11T07:03:47+00:00 ERROR API error: Array
+(
+    [url] => https://api-m.sandbox.paypal.com/v2/checkout/orders/7D332977S0619433F
+    [method] => PATCH
+    [http_status] => 400
+    [request] => Array
+(
+    [0] => Array
+        (
+            [op] => replace
+            [path] => /purchase_units/@reference_id=='default'
+            [value] => Array
+                (
+                    [amount] => Array
+                        (
+                            [value] => 122.10
+                            [currency_code] => SEK
+                            [breakdown] => Array
+                                (
+                                    [item_total] => Array
+                                        (
+                                            [currency_code] => SEK
+                                            [value] => 69.00
+                                        )
+
+                                    [shipping] => Array
+                                        (
+                                            [currency_code] => SEK
+                                            [value] => 60.00
+                                        )
+
+                                    [tax_total] => Array
+                                        (
+                                            [value] => 0.00
+                                            [currency_code] => SEK
+                                        )
+
+                                    [discount] => Array
+                                        (
+                                            [value] => 6.90
+                                            [currency_code] => SEK
+                                        )
+
+                                    [handling] => Array
+                                        (
+                                            [currency_code] => SEK
+                                            [value] => 0.00
+                                        )
+
+                                )
+
+                        )
+
+                    [items] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [name] => Parmigiano Reggiano, 36 mesi - 200 g
+                                    [quantity] => 1
+                                    [unit_amount] => Array
+                                        (
+                                            [currency_code] => SEK
+                                            [value] => 69.00
+                                        )
+
+                                    [sku] => 45
+                                    [description] => Product ID: 43. Variation ID: 45
+                                )
+
+                        )
+
+                    [shipping] => Array
+                        (
+                            [options] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [id] => 0:flat_rate:2
+                                            [label] => Frakt
+                                            [type] => SHIPPING
+                                            [selected] => 1
+                                            [amount] => Array
+                                                (
+                                                    [value] => 60.00
+                                                    [currency_code] => SEK
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [reference_id] => default
+                    [payee] => Array
+                        (
+                            [email_address] => sb-xormo14633575@business.example.com
+                            [merchant_id] => 6J4GYH47CRVT6
+                            [display_data] => Array
+                                (
+                                    [brand_name] => Il bazSAR di Giovanni
+                                )
+
+                        )
+
+                )
+
+        )
+
+)
+
+    [error] => Array
+        (
+            [message] => cURL error 28: SSL connection timeout
+        )
+
+)
+

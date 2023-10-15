@@ -22,6 +22,7 @@ h1 {
 
 .hero {
 	position: relative;
+	margin-bottom: 50px;
 }
 
 	.hero .text {
@@ -42,8 +43,6 @@ h1 {
 		.hero .text h1 {
 			font-size: 50px;
 		}
-    
-
 
 @media ( max-width: 768px ) {
 
@@ -129,6 +128,8 @@ h1 {
 	margin: 25px 0;
 }
 
+
+
 #page-article .meta > li {
 		float: none;
 		margin-right: 0;
@@ -138,6 +139,7 @@ h1 {
 			min-width: 20px;
 			text-align: center;
 		}
+
 
 }
 
@@ -158,6 +160,17 @@ footer {
 	display: flex;
 	justify-content: space-between;
 }
+
+@media ( max-width: 768px ) {
+	#footer-container {
+		flex-direction: column;
+		display: flex;
+		align-items: center;
+	}
+	.right-image {
+		display: none;
+	}
+	}
 
 #stores-location-box {
 	padding-top: 40px;
