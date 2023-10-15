@@ -16,8 +16,13 @@ h1 {
 	text-align: center;
 }
 
+.widget_product_search > form > input{
+	background-color: #a3c1ad;
+}
+
 .hero {
 	position: relative;
+	margin-bottom: 50px;
 }
 
 	.hero .text {
@@ -38,8 +43,6 @@ h1 {
 		.hero .text h1 {
 			font-size: 50px;
 		}
-    
-
 
 @media ( max-width: 768px ) {
 
@@ -142,6 +145,10 @@ h1 {
 
 footer {
 	margin-top: 50px;
+}
+
+#colophon {
+	background-color: #a3c1ad;
 }
 
 #container-about-us {
